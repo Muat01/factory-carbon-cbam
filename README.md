@@ -206,6 +206,6 @@ factory-carbon-cbam/
 **Muatasem Hadi** — MEng Industrial Engineering, Telkom University, Bandung.
 [GitHub](https://github.com/Muat01) · [LinkedIn](https://www.linkedin.com/in/muatasem-hadi)
 
-Part of a portfolio on using data, simulation and software to improve manufacturing: [predictive maintenance](https://github.com/Muat01/sutm-predictive-maintenance-dashboard) · [line simulation](https://github.com/Muat01/production-line-simulation-simpy) · [SPC and OEE](https://github.com/Muat01/spc-oee-quality-dashboard) · [asset health digital twin](https://github.com/Muat01/asset-health-digital-twin) · [scheduling copilot](https://github.com/Muat01/production-scheduling-copilot)
+Part of a portfolio on using data, simulation and software to improve manufacturing: [scheduling copilot](https://github.com/Muat01/production-scheduling-copilot) · [asset health digital twin](https://github.com/Muat01/asset-health-digital-twin) · [SPC and OEE](https://github.com/Muat01/spc-oee-quality-dashboard) · [line simulation](https://github.com/Muat01/production-line-simulation-simpy) · [grid predictive maintenance](https://github.com/Muat01/sutm-predictive-maintenance-dashboard) · [pump condition monitoring](https://github.com/Muat01/centrifugal-pump-predictive-maintenance)
 
 MIT licensed.
