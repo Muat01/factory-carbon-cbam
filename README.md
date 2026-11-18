@@ -3,8 +3,11 @@
 [![tests](https://github.com/Muat01/factory-carbon-cbam/actions/workflows/tests.yml/badge.svg)](https://github.com/Muat01/factory-carbon-cbam/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-E6B94A.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-22C98A.svg)](https://www.python.org/)
+[![Live app](https://img.shields.io/badge/Live%20app-Streamlit-6FA8FF.svg)](https://factory-carbon-cbam.streamlit.app/)
 
 **From cycle times to a carbon border bill: a simulated steel plant where scrap, idle time and offcut are priced at the EU border, and the improvement backlog is re-ranked once they are.**
+
+**Try it: [factory-carbon-cbam.streamlit.app](https://factory-carbon-cbam.streamlit.app/)** — the app sleeps when idle, so the first load can take a moment to wake.
 
 ![Carbon footprint of one part](docs/fig_carbon_waterfall.png)
 
@@ -125,6 +128,8 @@ Installing the five shop-floor levers together abates 385 t, not the 394 t the i
 - **Not legal or compliance advice.** Do not file anything based on this.
 
 ## Getting started
+
+The app runs live at **[factory-carbon-cbam.streamlit.app](https://factory-carbon-cbam.streamlit.app/)**. To run it yourself:
 
 ```bash
 git clone https://github.com/Muat01/factory-carbon-cbam.git
