@@ -1,0 +1,143 @@
+{
+  "_README": "ALL VALUES ARE ILLUSTRATIVE AND SIMULATED. The plant does not exist. Emission factors, CBAM benchmarks and default values here are placeholders chosen to be plausible for a small Indonesian steel-fabrication plant; they are NOT the official figures. Replace the cbam.benchmarks_t_co2_per_t and cbam.default_values_t_co2_per_t blocks with the values published in Commission Implementing Regulation (EU) 2025/2621 before using this tool for any real declaration.",
+  "plant": {
+    "name": "Bandung Steel Brackets (simulated)",
+    "good": "Steel structural brackets, hot-rolled steel, welded",
+    "cn_code": "7308 90",
+    "cbam_sector": "iron_and_steel",
+    "production_route": "downstream_steel_products",
+    "shifts_per_day": 2,
+    "hours_per_shift": 8.0,
+    "days_per_year": 250,
+    "changeovers_per_day": 3.0,
+    "setup_time_min": 22.0,
+    "baseload_kw": 48.0,
+    "compressed_air_leak_kw": 11.0,
+    "part_mass_kg": 6.4,
+    "input_mass_kg": 7.6,
+    "eu_export_share": 0.42,
+    "stations": [
+      {
+        "name": "Cutting",
+        "cycle_time_s": 38.0,
+        "performance": 0.94,
+        "mtbf_h": 210.0,
+        "mttr_h": 2.4,
+        "scrap_rate": 0.018,
+        "power_run_kw": 22.0,
+        "power_idle_kw": 4.5,
+        "power_down_kw": 2.0,
+        "gas_run_kw": 0.0,
+        "gas_idle_kw": 0.0
+      },
+      {
+        "name": "Forming",
+        "cycle_time_s": 44.0,
+        "performance": 0.91,
+        "mtbf_h": 160.0,
+        "mttr_h": 3.1,
+        "scrap_rate": 0.026,
+        "power_run_kw": 31.0,
+        "power_idle_kw": 6.0,
+        "power_down_kw": 2.5,
+        "gas_run_kw": 0.0,
+        "gas_idle_kw": 0.0
+      },
+      {
+        "name": "Welding",
+        "cycle_time_s": 52.0,
+        "performance": 0.88,
+        "mtbf_h": 120.0,
+        "mttr_h": 2.8,
+        "scrap_rate": 0.034,
+        "power_run_kw": 27.0,
+        "power_idle_kw": 5.5,
+        "power_down_kw": 2.2,
+        "gas_run_kw": 0.0,
+        "gas_idle_kw": 0.0
+      },
+      {
+        "name": "Stress relief (gas furnace)",
+        "cycle_time_s": 41.0,
+        "performance": 0.95,
+        "mtbf_h": 320.0,
+        "mttr_h": 4.5,
+        "scrap_rate": 0.009,
+        "power_run_kw": 9.0,
+        "power_idle_kw": 6.5,
+        "power_down_kw": 5.0,
+        "gas_run_kw": 165.0,
+        "gas_idle_kw": 72.0
+      }
+    ]
+  },
+  "factors": {
+    "ef_grid_t_co2_per_mwh": 0.85,
+    "ef_grid_country_default_t_co2_per_mwh": 0.85,
+    "ef_grid_country_default_source": "The country grid factor CBAM falls back to when a plant cannot prove a direct technical link or a qualifying PPA. Held separate from the actual factor so that on-site renewables can lower the real footprint without automatically lowering the declared one.",
+    "ef_grid_source": "Illustrative value for a Java-Bali style coal-heavy grid. For a real declaration use the country factor in Implementing Regulation (EU) 2025/2621 Annex III.",
+    "ef_gas_t_co2_per_mwh_th": 0.2020,
+    "ef_gas_source": "IPCC 2006 default for natural gas, 56.1 t CO2/TJ, converted to 0.2020 t CO2 per MWh thermal.",
+    "ef_precursor_t_co2_per_t": 2.1,
+    "ef_precursor_source": "Illustrative hot-rolled coil from the blast furnace / basic oxygen furnace route.",
+    "ef_precursor_scrap_eaf_t_co2_per_t": 0.65,
+    "ef_precursor_scrap_eaf_source": "Illustrative hot-rolled coil from the scrap / electric arc furnace route."
+  },
+  "prices": {
+    "electricity_eur_per_mwh": 78.0,
+    "gas_eur_per_mwh_th": 31.0,
+    "steel_eur_per_t": 620.0,
+    "steel_scrap_eaf_premium_eur_per_t": 45.0,
+    "scrap_sale_eur_per_t": 210.0,
+    "ets_price_eur_per_t": 90.0,
+    "ets_price_source": "EUA December-2026 futures traded around EUR 90/t in early and mid November 2026; the Reuters analyst poll put the 2026 average at EUR 92.65/t and 2027 at EUR 107.29/t.",
+    "origin_carbon_price_eur_per_t": 3.9,
+    "origin_carbon_price_coverage": 0.0,
+    "origin_carbon_price_coverage_source": "Share of the good's embedded emissions actually subject to a carbon price in the country of origin. Set to zero in the baseline because Indonesia's legislated carbon tax is not yet enforced on manufacturing; raise it to explore what enforcement would be worth.",
+    "origin_carbon_price_source": "IDXCarbon average around IDR 67,000/t (about USD 4/t). Indonesia's legislated carbon tax under Law 7/2021 is not yet enforced, so the deduction is modelled as a scenario, not as a certainty.",
+    "discount_rate": 0.10
+  },
+  "cbam": {
+    "year": 2026,
+    "cbam_factor_by_year": {
+      "2026": 0.975,
+      "2027": 0.95,
+      "2028": 0.90,
+      "2029": 0.775,
+      "2030": 0.515,
+      "2031": 0.39,
+      "2032": 0.265,
+      "2033": 0.14,
+      "2034": 0.0
+    },
+    "cbam_factor_note": "Share of EU ETS free allocation still granted to CBAM-sector production, from Article 10a(1a) of Directive 2003/87/EC. The payable share is 1 minus this factor: 2.5% in 2026, 5% in 2027, 10% in 2028, 22.5% in 2029, 48.5% in 2030, 61% in 2031, 73.5% in 2032, 86% in 2033 and 100% in 2034.",
+    "default_value_markup_by_year": {
+      "2026": 0.10,
+      "2027": 0.20,
+      "2028": 0.30,
+      "2029": 0.30,
+      "2030": 0.30,
+      "2031": 0.30,
+      "2032": 0.30,
+      "2033": 0.30,
+      "2034": 0.30
+    },
+    "default_value_markup_note": "Mark-up applied to published default values: 10% in 2026, 20% in 2027 and 30% from 2028 (fertilisers use a flat 1%).",
+    "cross_sectoral_correction_factor": 1.0,
+    "cscf_note": "Placeholder. The cross-sectoral correction factor is set by the Commission and scales the free allocation benchmark.",
+    "benchmarks_t_co2_per_t": {
+      "downstream_steel_products": 1.80,
+      "hot_rolled_steel": 1.35,
+      "aluminium_profiles": 1.48
+    },
+    "benchmarks_note": "ILLUSTRATIVE placeholders, not official figures. They were not tuned to produce a particular answer; they were derived from a stated rule so a reader can check the logic and swap in the real values. The hot-rolled-steel figure stands in for the EU ETS product benchmark for hot rolled coil. The downstream figure is that benchmark multiplied by the material intensity of the modelled part (about 1.3 t of coil per tonne of finished bracket) plus a small allowance for the finishing steps. Replace both with the values published in Commission Implementing Regulation (EU) 2025/2621 before any real use.",
+    "default_values_t_co2_per_t": {
+      "downstream_steel_products": 3.60,
+      "hot_rolled_steel": 3.20,
+      "aluminium_profiles": 9.10
+    },
+    "default_values_note": "ILLUSTRATIVE placeholders, not official figures. Published default values are built by taking the highest available value across origins for each product, which is why they sit well above what a reasonably run installation actually emits; the placeholders here follow that construction rule rather than any measured value. The regulatory mark-up is applied on top by the code, not baked into these numbers. Replace with the official published values before any real use.",
+    "de_minimis_tonnes_per_year": 50.0,
+    "de_minimis_note": "An importer whose cumulative net mass of CBAM goods stays at or below 50 t in a calendar year is outside CBAM. Hydrogen and electricity are excluded from this exemption."
+  }
+}

@@ -1,0 +1,22 @@
+metric,value,unit
+good_parts_per_year,212295.97804059132,parts
+output,1358.6942594597845,t
+eu_shipped,570.6515889731095,t
+bottleneck_station,Welding,
+oee_availability,0.9100162866449512,share
+oee_performance,0.88,share
+oee_quality,0.957306,share
+oee,0.7666243651465798,share
+electricity,531.9845966378043,MWh
+fuel,526.8409617164937,MWh thermal
+steel_input,1762.1145337519963,t
+material_yield,0.7710589938593685,share
+direct_emissions,106.42187426673173,t CO2e
+indirect_emissions,452.18690714213363,t CO2e
+precursor_emissions,3700.4405208791923,t CO2e
+total_emissions,4259.049302288057,t CO2e
+see_total,3.1346634996319565,t CO2e per t
+kg_co2e_per_part,20.061846397644523,kg
+avoidable_share,0.2643916806758214,share
+energy_cost,57826.86835096004,EUR
+conversion_cost,1065619.6216758334,EUR
